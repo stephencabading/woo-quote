@@ -1,0 +1,70 @@
+.add-links-wrap {
+    display: flex;
+    justify-content: center;
+}
+
+ul.products .add-links {
+    display: flex !important;
+    gap: 4px;
+}
+
+ul.products .add-links a {
+    flex: auto !important;
+}
+
+li.product-default:hover .add-links .quickview {
+    right: -35px !important;
+}
+
+.woo-add-to-quote.button {
+    padding: 0 24px;
+    height: 3rem;
+    text-transform: uppercase;
+    font-size: 1em;
+    letter-spacing: -0.015em;
+    font-weight: 700;
+    line-height: 3rem;
+    font-family: "Oswald", sans-serif;
+}
+
+.woo-add-to-quote.button.alt {
+    padding: 0 1.2em;
+    height: 36px;
+    min-width: 36px;
+    line-height: 34px;
+}
+
+.woo-add-to-quote:hover {
+    opacity: 0.8;
+}
+
+.woo-quote-count {
+    display: inline-block;
+    min-width: 18px;
+    height: 18px;
+    line-height: 18px;
+    font-size: 11px;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 50%;
+    color: #000;
+    background: #fdcb50;
+    margin-left: 4px;
+}
+
+/* Force the spin animation if the library fails to */
+.fa-spin {
+    -webkit-animation: fa-spin 2s infinite linear !important;
+    animation: fa-spin 2s infinite linear !important;
+}
+
+@-webkit-keyframes fa-spin {
+    0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(359deg); transform: rotate(359deg); }
+}
+
+@keyframes fa-spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(359deg); }
+}
+
